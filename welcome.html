@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'poppins',sans-serif;
+                box-sizing: border-box;
+                
+            }
+            .container
+            {
+                width:100%; 
+                min-height: 100vh;
+                background-image:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url('Screenshot (111).png');
+                background-size: cover;
+                background-position: center;
+                padding: 10px 8%;
+               
+                    
+            }
+            nav{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+            }
+            .logo{
+                width:180px;
+                cursor:pointer;
+            }
+            
+            nav ul{
+                list-style: none;
+                width:100%;
+                text-align:right;
+                padding-right: 60px;
+            }
+            
+            nav ul li{
+                display: inline-block;
+                margin: 10px 20px;
+            }
+            
+            nav ul li a{
+                color: #ffff;
+                text-decoration: none;
+            }
+            
+            .btn{
+                display: flex;
+                align-items: center;
+                padding:10px 20px;
+                border:0;
+                outline:0;
+                border-radius: 7px;
+                background:#f5168d;
+                color: #ffff;
+                cursor:pointer;
+                margin-left: 5px;
+            }
+            .content{
+                margin-top:70px;
+                color: #ffff;
+                max-width: 620px;
+            }
+            .content h1{
+                font-size:70px;
+                font-weight: 600;
+                line-height: 85px;
+                margin-bottom: 25px;
+            }
+            .content form{
+             display: flex;
+             align-items: center;
+             background: #ffff;
+            border-radius: 5px;
+            padding:10px;
+            margin-top:30px;
+            }
+            .content form input{
+                border:0;
+                outline: 0;
+                width: 100%;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+            .container form .btn{
+                font-size: 15px;
+                padding:10px 30px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src='Screenshot (110).png' class="logo">
+                <ul>
+                    <li><a href='#'>about us</a></li>
+                    <li><a href='#'> home </a></li>
+                    <li><a href='#'>contact us</a></li>
+                </ul>
+                <button class="btn">Login</button>
+                <button class="btn">signup</button>
+            </nav>
+            <div class="content">
+                <h1>Learn without limits </h1>
+                <p>Start, switch, or advance your career with more than 3 courses,
+                    Professional Certificates, and degrees from world-class universities and companies.</p>
+                <form>
+                    <input type="text" placeholder="course name">
+                    <button  type="button" class="btn">submit</button>
+                </form>
+
+                <h1>connect with us</h1>
+                <p>We would love to respond to your queries and help you succeed. Feel 
+                 free to get in touch with us.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .hero{
+                height: 100%;
+                width: 100%;
+                
+            }
+            .formbox{
+                width: 380px;
+                height: 480px;
+                position: relative;
+                margin: 6% auto;
+                background: rgb(204,255,255);
+                padding: 5px;
+                overflow: hidden;
+            }
+            .buttonbox{
+                width: 220px;
+                margin: 35px auto;
+                position: relative;
+                box-shadow: 0 0 20px 9px #ff61241f;
+                border-radius: 30px;
+            }
+            .toggle{
+                padding: 10px 30px;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                outline:none;
+                position: relative;
+            }
+            #btn{
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 110px;
+                height: 100%;
+                background: linear-gradient(to right,#ff105f,#ffad96);
+                border-radius: 30px;
+                transition: .5s;
+            }
+            .social{
+                margin: 30px auto;
+                text-align: center;
+            }
+            .social img{
+                width: 30px;
+                margin: 0 12px;
+                box-shadow: 0 0 20px 0 #7f7f7f3d;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            .inputgroup{
+                top: 180px;
+                position: absolute;
+                width: 280px;
+                transition: .5s;   
+            }
+            .infield{
+                width: 100%;
+                padding:10px 0;
+                margin:5px 0;
+                border-left: 0;
+                border-top: 0;
+                border-right:0;
+                border-bottom: 1px solid #999;
+                outline: none;
+                background: transparent;
+            }
+            .submitbtn{
+               width: 85%;
+               padding:10px 30px;
+               cursor: pointer;
+               display: block;
+               margin: auto;
+               background: linear-gradient(to right,#ff105f,#ffad96);
+               border: 0;
+               outline: none;
+               border-radius: 30px;
+            }
+            .cbox{
+                margin:30px 10px 30px 0;
+            }
+            span{
+                color: #777;
+                font-size: 12px;
+                bottom:68px;
+                position: absolute;
+            }
+            #login
+            {
+               left: 50px; 
+            }
+             #signup
+            {
+               left: 450px; 
+            }
+        </style>
+          
+    </head>
+    <body>
+        <div class="hero">
+            <div class="formbox">
+                <div class="buttonbox">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="login()">Log in</button>
+                      <button type="button" class="toggle" onclick="signup()">sign up</button>
+                </div>
+                <div class="social">
+                <img src="fb.png">
+                 <img src="tw.png">
+                  <img src="google.png">
+                </div>
+                <form id="login" class="inputgroup">
+                    <input type="text" class="infield" placeholder="User ID" required>
+                     <input type="text" class="infield" placeholder="Enter password" required>
+                     <input type="checkbox" class="cbox"><span> Remember password</span>
+                     <button type="button" class="submitbtn">Log in </button>
+                </form>
+                <form id="signup" class="inputgroup">
+                    <input type="text" class="infield" placeholder="User ID" required>
+                     <input type="email" class="infield" placeholder="Email Id" required>
+                      <input type="text" class="infield" placeholder="Enter password" required>
+                     <input type="checkbox" class="cbox"><span> I agree to the terms & condition</span>
+                     <button type="submit" class="submitbtn">Sign in </button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x =document.getElementById("login");
+            var y =document.getElementById("signup");
+            var z =document.getElementById("btn");
+            
+            function signup(){
+                x.style.left="-400px";
+                 y.style.left="50px";
+                  z.style.left="110px";
+              }
+               function login(){
+                x.style.left="50px";
+                 y.style.left="450px";
+                  z.style.left="0px";
+                 
+            }
+            
+            
+        </script>
+    </body>
+</html>
